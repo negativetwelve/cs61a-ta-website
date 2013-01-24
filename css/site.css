@@ -33,7 +33,7 @@ a:hover {
 }
 
 #middle_section {
-  height: 33%;
+  min-height: 33%;
   background-color: #2BA6CB;
   color: white;
   font-size: 28px;
@@ -41,7 +41,7 @@ a:hover {
 }
 
 #footer {
-  height: 33%;
+  min-height: 33%;
   background-color: rgba(0, 0, 0, 0.85);
   color: white;
   font-size: 28px;
