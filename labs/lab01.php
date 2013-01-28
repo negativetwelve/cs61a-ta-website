@@ -528,7 +528,7 @@ def factors(n):
 went wrong with your code. <b>If you run into error messages, try to identify the problem
 before asking for help.</b>
 
-<h3 class="section_title">Exercise 5 - ucb.py Features</h3>
+<h3 class="section_title">ucb.py Features</h3>
 
 <p>
 For this course, there are a few features that you might find useful
@@ -536,14 +536,15 @@ for your assignments &ndash; the staff have provided these in a file
 called <tt>ucb.py</tt>, which will be provided with every project. 
 If you would like to use the features in <code>ucb.py</code>, you will 
 need to import the <tt>ucb.py</tt> file into your Python files: 
-to do so, you should add the following statement to the top of
-your Python file:
+First you'll need to copy the ucb.py to your current directory, you can do this by 
+running the command <pre>cp ~cs61a/lib/ucb.py .</pre> Then, you should add the following 
+statement to the top of your Python file:
 <pre>from ucb import main, interact</pre>
 For now, we are going to go over the <tt>main</tt> feature, which 
 allows you to easily test your functions:
 </p>
 
-<h4 class="section_title">Section I: <tt>main</tt></h4>
+<h4 class="section_title"><tt>main</tt></h4>
 
 <p>An <em>entry point</em> of a program is the place where the execution starts happening. It is usually very convenient to be able to mark an entry point in a Python file for testing purposes. Say we have the following file <tt>cube.py</tt>:</p>
 
