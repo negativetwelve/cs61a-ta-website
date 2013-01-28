@@ -51,7 +51,8 @@
 
 <h3 class="section_title">Warm Up: What would Python print?</h3>
 <p>Predict what Python will print in response to each of these expressions.  
-  Then try it and make sure your answer was correct, or if not, that you understand why!</p>
+  Then try it and make sure your answer was correct, or if not, that you understand why! If 
+  you don't remember how to start Python, type in: <tt>python3</tt> into the command line.</p>
 <pre class="codemargin">
 # Q1
 a = 1
