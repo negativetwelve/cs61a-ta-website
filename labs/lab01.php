@@ -622,39 +622,6 @@ script, then throws you into an interpreter. If you omit the -i option, Python w
 Note that for the last few exercises, we didn't actually need to use the interpreter prompt, so it would
 have sufficed to only run <tt>python3 cube.py</tt>.</p>
 
-<hr/>
-
-<p>For the next two exercises, you will be using Emacs. Create a file <tt>lab1.py</tt> and put the following two function definitions in this file. We will have you print this file at the end.</p>
-
-<p> Before you get started, you should know a little bit about the <tt>if</tt> statement. The
-basic form looks like: </br>
-<pre>
-if test:
-    do something here
-elif other_test:
-    do something else here
-else:
-    do something else (else) here
-</pre>
-<p> The elif is basically 'else if' in other languages, which means if the first 'if' fails, 
-you can try another test.</p>
-<p> The tests need to be expressions that evaluate to boolean truth values. So for 
-example: </p> 
-<pre>
-if 3 > 5:
-    print("Nice try!")
-elif 3 > 4:
-    print("Try, try again!")
-else:
-    print("There we go!")
-</pre>
-
-<p> That bit of code would print "There we go!". You'll see a lot more of <tt>if</tt> in the 
-next lab, so don't worry too much about it right now. Feel free to ask your TA if you need
-more help! </p>
-
-</p>
-
     <?php if ($CUR_DATE > $RELEASE_DATE) { ?>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script>
