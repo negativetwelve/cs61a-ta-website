@@ -544,7 +544,7 @@ For now, we are going to go over the <tt>main</tt> feature, which
 allows you to easily test your functions:
 </p>
 
-<h4 class="section_title"><tt>main</tt></h4>
+<h4 class="section_title">ucb.py's <tt>main</tt></h4>
 
 <p>An <em>entry point</em> of a program is the place where the execution starts happening. It is usually very convenient to be able to mark an entry point in a Python file for testing purposes. Say we have the following file <tt>cube.py</tt>:</p>
 
