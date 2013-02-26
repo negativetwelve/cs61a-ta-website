@@ -7,16 +7,20 @@ body {
   font-weight: normal;
   font-style: normal;
   font-size: 14px;
-  line-height: 1;
+  line-height: 1.4;
   color: #222;
 }
 
-a {
-  color: #CCCCCC;
+a:hover {
+  text-decoration: none;
 }
 
-a:hover {
-  color: #555555;
+p {
+  font-family: "ff-tisa-web-pro",Georgia,Cambria,"Times New Roman",Times,serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 27px;
 }
 
 #container {
@@ -46,4 +50,20 @@ a:hover {
   color: white;
   font-size: 28px;
   padding: 20px;
+}
+
+.pic {
+  float: left;
+}
+
+.about {
+  float: left;
+}
+
+.description {
+  margin-bottom: 10px;
+}
+
+.padding-top {
+  padding-top: 10px;
 }
