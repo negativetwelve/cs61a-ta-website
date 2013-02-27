@@ -54,6 +54,7 @@ p {
 
 .pic {
   float: left;
+  padding-top: 10px;
 }
 
 .about {
