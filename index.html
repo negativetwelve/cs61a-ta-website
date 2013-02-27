@@ -90,6 +90,20 @@
           </div>
           
           <div class="row">
+            <h4>Warmup Problem - Week of 2/25</h4>
+            <div class="description">
+              Write a function that emulates the fucntionality of <code>map</code> but for our implementation of rlists. You may use the functions we have been working with: <code>first</code> and <code>rest</code>.
+            </div>
+            <pre class="brush: python;">
+              def map_rlist(fn, f):
+                  """
+                  >>> r = rlist(2, rlist(3, rlist(5, empty_rlist)))
+                  >>> map_rlist(lambda x: x*x, r)
+                  (4, (9, (25, None)))
+                  """
+                  "***YOUR CODE HERE***"
+            </pre>
+
             <h4>Challenge Problem - Week of 2/18</h4>
             <div class="description">Write a function that finds the length of the longest contiguous string of the same character and returns that length. Implement it recursively (you probably don't want to do it iteratively but you're free to try!) You may use the functions <code>first</code> and <code>rest</code> defined below.
             <h5>Hint #1: You might want to use a helper function...</h5>
