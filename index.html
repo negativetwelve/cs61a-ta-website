@@ -7,6 +7,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Mark Miyashita</title>
+        <meta http-equiv="REFRESH" content="0; url=http://markmiyashita.com/cs61a">
         <meta name="description" content="">
         <!-- 
         <meta name="viewport" content="width=device-width">
@@ -27,137 +28,7 @@
       	<link type="text/css" rel="stylesheet" href="css/shCoreDefault.css"/>
       	<script type="text/javascript">SyntaxHighlighter.all();</script>
     </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
-
-        <!-- Add your site or application content here -->
-        
-        <!--
-        <div id="container">
-          <div id="main_header">
-            <p>Hey guys! My name is Mark Miyashita and I am the TA for sections 23 and 27.</p>
-            <img src="img/mark_miyashita.png"></img>
-          </div>
-          <div id="middle_section">
-            <p>My office hours are on Tuesdays 11am-12pm, and 3pm-4pm in 751 Soda (the alcove). You can also email me at <a href="mailto:cs61a-td@imail.eecs.berkeley.edu">cs61a-td@imail.eecs.berkeley.edu</a> if you can't make my office hours and would like to speak to me.</p>
-            <p>I will try to update this site with more information as it comes up and also some practice problems if you want a challenge.</p>
-            <h3>Resources</h3>
-            <p><a href="https://hkn.eecs.berkeley.edu/tutor/">HKN Tutoring Hours</a> are a great way to get help on any subject, including CS61A! My tutoring hours are on Wednesdays 2-3pm (which unfortunately is during one of the lectures) and Thursday from 11am-12pm. You're more than welcome to stop by, actually, I encourage you to stop by and ask all of your questions that you might have.</p>
-            
-          </div>
-          <div id="footer">
-            <p>My personal website is located <a href="http://markmiyashita.com">here.</a> You can also view some of the projects that I have worked on <a href="http://markmiyashita.com/projects">here.</a>
-            </p>
-          </div>
-        </div>
-        -->
-        <div class="container">
-          <div class="padding-top">
-          </div>
-          <div class="row">
-          <div class="span12">
-            <img src="img/mark_miyashita.png" class="pic"></img>
-            <div class="about">
-              <h1>Mark Miyashita<h1>
-              <h4>
-                Sections:
-              </h4>
-                Lab/Disc 23 - WF 11am-12:30pm<br/>
-                Lab/Disc 27 - TTh 9:30am-11am
-              <h4>
-                Office Hours:
-              </h4>
-                Tuesday 11am-12pm, 3-4pm in 751 Soda<br/>
-                Wednesday 2-3pm in 345 Soda<br/>
-                Thursday 11am-12pm in 345 Soda<br/>
-            </div>
-            </div>
-          </div>
-          <div class="row">
-          <div class="span12">
-            <div class="about_me">
-              <h4>Email:</h4>
-              <a href="mailto:cs61a-td@imail.eecs.berkeley.edu">cs61a-td@imail.eecs.berkeley.edu</a>
-              <h4>Personal:</h4>
-              You can find my personal site <a href="http://markmiyashita.com">here.</a> You can also find my projects <a href="http://markmiyashita.com/projects">here.</a> Always feel free to send me an email with any questions you have!
-            </div>
-          </div>
-          </div>
-          <div class="row">
-          <div class="span12">
-            <div class="announcements">
-              <h1>Announcements!</h1>
-              <h4>Extra Problems:</h4>
-              Starting on Tuesday the 19th, I have given out either a warmup problem or a challenge problem to my lab and discussion sections. They will be posted below and updated throughout the semester with solutions.
-              <hr>
-            </div>
-          </div>
-          </div> 
-
-          <div class="row">
-          <div class="span12">
-            <h4>Warmup - Week of 2/25</h4>
-            <div class="description">
-              Write a function that emulates the fucntionality of <code>map</code> but for our implementation of rlists. You may use the functions we have been working with: <code>first</code> and <code>rest</code>.
-            </div>
-            <pre class="brush: python;">
-              def map_rlist(fn, f):
-                  """
-                  >>> r = rlist(2, rlist(3, rlist(5, empty_rlist)))
-                  >>> map_rlist(lambda x: x*x, r)
-                  (4, (9, (25, None)))
-                  """
-                  "***YOUR CODE HERE***"
-            </pre>
-
-            <h4>Challenge Problem - Week of 2/18</h4>
-            <div class="description">Write a function that finds the length of the longest contiguous string of the same character and returns that length. Implement it recursively (you probably don't want to do it iteratively but you're free to try!) You may use the functions <code>first</code> and <code>rest</code> defined below.
-            <h5>Hint #1: You might want to use a helper function...</h5>
-            <h5>Hint #2: Your helper function might want to include the following information (maybe more):</h5>
-            <pre class="brush: python;">
-              def helper(word, prev_char, curr_count, curr_max):
-                  "***YOUR CODE HERE***"
-            </pre>
-            </div>
-            
-            <pre class="brush: python;">
-              def first(word):
-                  return word[0]
-    
-              def rest(word):
-                  return word[1:]
-            </pre>
-            <pre class="brush: python;">
-              def find_longest_run(word):
-                  """ Finds the length of the longest contiguous string of a single character and returns the length.
-                  >>> find_longest_run("hello")
-                  2
-                  >>> find_longest_run("helloooo")
-                  4
-                  """
-                  "***YOUR CODE HERE***"
-            </pre>
-            
-            <h4>Warmup - Week of 2/18</h4>
-            <div class="description">Write a function that sums up the digits of a number. Try to implment it both iteratively and recursively.</div>
-            <pre class="brush: python;">
-              def sum_digits(n):
-                  """ Takes a number n as input and outputs the sum of the digits of n.
-                  >>> sum_digits(100)
-                  1
-                  >>> sum_digits(235)
-                  10
-                  """
-                  "***YOUR CODE HERE***"
-            </pre>
-          </div>
-        </div>
-        </div>
-
-
-        <script type="text/javascript">
+      <script type="text/javascript">
 
           var _gaq = _gaq || [];
           _gaq.push(['_setAccount', 'UA-37913581-1']);
@@ -169,7 +40,7 @@
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
           })();
 
-        </script>
+      </script>
         
     </body>
 </html>
